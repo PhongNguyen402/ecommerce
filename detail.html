@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .breadcrumb a:first-child::before{
+            content: none;
+        }
+        .breadcrumb a::before{
+            content: url(img/Group.svg);
+        }
+        .gray-list li::marker{
+            color: gray;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex-container flex-direction-colum" >
+        <img src="img/Rectangle24.svg" alt="Rectangle" class="thumbnail">
+        <img src="img/Rectangle25.svg" alt="Rectangle" class="thumbnail">
+        <img src="img/Rectangle26.svg" alt="Rectangle" class="thumbnail">
+        <img src="img/Rectangle.png" alt="Rectangle" class="thumbnail-active">
+    </div>
+    <div class="breadcrumb">
+        <a href="home.html">Home</a>
+        <a href="#">Jackets</a>
+        <a href="#">Julia</a>
+    </div>
+    <form>
+        <input type="number" name="quantity" min="1" max="5">
+    </form>
+    <div>
+        <div>
+            <p>CONTENT & CARE</p>
+            <ul class="gray-list">
+                <li>Nylon, Metallic</li>
+                <li>Spandex Imported</li>
+                <li>Dry Flat</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
